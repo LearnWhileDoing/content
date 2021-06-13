@@ -1,37 +1,69 @@
 intro:
   name: Introduction
   content:
-    course-materials: Course Materials
-    contributors: Contributors
-    get-help: Get Help with the Course
+    course-materials:
+      name: Course Materials
+      description: Here's what you will need for this course.
+    contributors:
+      name: Contributors
+    get-help:
+      name: Get Help with the Course
 
 understanding-java:
   name: Understanding Java
   content:
-    technical-details: Technical Details
-    program-structure: Program Structure
-    variables: Variables and Primitive Data Types
-    using-java-programs: Using Java Programs
+    technical-details:
+      name: Technical Details
+      description: What makes Java... Java?
+    program-structure:
+      name: Program Structure
+      description: What's a Java program like?
+    variables:
+      name: Variables and Primitive Data Types
+    using-java-programs:
+      name: Using Java Programs
 
 programming-concepts:
   name: Programming Concepts in Java
   content:
-    arithmetic: Arithmetic
-    booleans: Booleans
-    control-flow: Control Flow
-    loops: Loops & Iteration
+    arithmetic:
+      name: Arithmetic
+      description: Math is c00l
+    booleans:
+      name: Booleans
+      description: boolean isAwesome = true;
+    control-flow:
+      name: Control Flow
+      description: Selection logic
+    loops:
+      name: Loops & Iteration
+      description: Do this until that
 
 basic-java:
   name: Basic Java
   content:
-    methods: Methods
-    classes: Classes
-    scope: Scope
-    arrays: Arrays and ArrayLists
-    hashmaps: HashMaps
+    methods:
+      name: Methods
+      description: Sequential logic
+    classes:
+      name: Classes
+      description: The most fundamental parts of your Java program
+    scope:
+      name: Scope
+      description: Peek-a-boo, I see you!
+    arrays:
+      name: Arrays and ArrayLists
+      description: Storing multiple values in a single variable
+    hashmaps:
+      name: HashMaps
+      description: Relating keys to values
 
 advanced:
-    name: Advanced Topics
-    content:
-      inheritance: OOP — Inheritance & Composition
-      abstraction: OOP — Abstraction
+  name: Advanced Topics
+  content:
+    inheritance:
+      name: OOP — Inheritance & Composition
+      description: is-a vs. has-a
+    abstraction:
+      name: OOP — Abstraction
+      description: Hierarchical organization of information
