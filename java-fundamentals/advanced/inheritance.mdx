@@ -1,0 +1,87 @@
+---
+description: is-a vs. has-a
+---
+
+In Java (and most OOP languages), there are two concepts relating to classes known as inheritance and composition. They help you to more efficiently plan out your code. Let's take a look at what inheritance and composition are.
+
+# Inheritance
+
+Suppose we have a class `Shape`. It has a name and a color.
+
+```java
+public class Shape {
+    protected String name;
+    protected String color;
+
+    public Shape(String theName, String theColor) {
+        name = theName;
+        color = theColor;
+    }
+}
+```
+
+## Sub-classes
+
+Later on, we discover a shape known as a `Rectangle`. Its name is "Rectangle", it has a color, but it also has a `width` and a `height`. A `Rectangle` ***is-a*** `Shape`, so we will *extend* the `Shape class`, thereby inheriting all of the properties of the `Shape` class.
+
+We do this by using the keyword `extends`.
+
+```java
+public class Rectangle extends Shape {
+    protected int width;
+    protected int height;
+    
+    public Rectangle(int theWidth, int theHeight, String theColor) {
+        super("rectangle", theColor);
+        width = theWidth;
+        height = theHeight;
+    }
+}
+```
+
+## The super keyword
+
+When you inherit a class, you are *extending* it. That's why we use the `extends` keyword. However, we mustn't forget that the class we are creating, called the *sub-class*, has a parent class, called the *super*-class. The super-class has a constructor that must be called within the constructor of the sub-class. <Asterisk>There are some exceptions to this rule, but that is outside of the scope of this lesson.</Asterisk> To do so, we use the `super` method, as demonstrated above. This calls the constructor of the parent class with the provided parameters.
+
+<Callout info>
+A class can only have one parent class.
+</Callout>
+
+## Protected access
+
+Earlier, we learned about access specification on methods and instance variables. However, we only discussed `private` and `public`. There is a third access specifier: `protected`. A method or instance variable that is `protected` can be accessed within the class but also by sub-classes.
+
+
+# Composition
+
+We just learned that a sub-class can only inherit one class. However, consider a copier machine: it *is-a* printer and scanner. But how can we represent this without extending two classes?
+
+Composition is another pillar of OOP. Instead of thinking "a copier *is-a* printer and a scanner", think "a copier *has-a* printer and a scanner".
+
+We can make a `Copier` class have two instance variables, one that *is-a* `Printer` and one that *is-a* `Scanner`.
+
+```java
+public class Copier {
+    private Printer printer = new Printer();
+    private Scanner scanner = new Scanner();
+    
+    public void print(Page page) {
+        printer.print(page);
+    }
+        
+    public Page scan() {
+        return scanner.scan();
+    }
+    
+    public void copy() {
+        Page page = scan();
+        this.print(page);
+    }
+}
+```
+
+Now, instead of having to inherit two classes which breaks the rules of OOP, we can use composition to have a class that uses the functionalities of both a `Printer` and a `Scanner`.
+
+<Callout info>
+Inheritance = is-a; Composition = has-a
+</Callout>
