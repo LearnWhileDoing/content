@@ -3,7 +3,7 @@ intro:
   content:
     course-materials: Course Materials
     contributors: Contributors
-    get-help Get Help with the Course
+    get-help: Get Help with the Course
 
 understanding-java:
   name: Understanding Java
