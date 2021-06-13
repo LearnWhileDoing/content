@@ -1,10 +1,13 @@
 java-fundamentals:
   isProject: false
   name: Java Fundamentals
-  authors: Cole Gawin
+  authors:
+    - Cole Gawin
   color: orange
   subtitle: Learn the fundamentals of object-oriented programming, the Java programming language, and how to code in it.
   tags:
     - java
     - oop
     - programming
+  projectFilesURL:
+  
