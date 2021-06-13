@@ -1,5 +1,5 @@
-Java Fundamentals:
-  id: java-fundamentals
+java-fundamentals:
+  name: Java Fundamentals
   authors: Cole Gawin
   subtitle: Learn the fundamentals of object-oriented programming, the Java programming language, and how to code in it.
   tags: java,oop,programming
