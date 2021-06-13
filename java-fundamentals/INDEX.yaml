@@ -1,37 +1,37 @@
-Introduction:
-  id: intro
+intro:
+  name: Introduction
   content:
-    Course Materials: course-materials
-    Contributors: contributors
-    Get Help with the Course: get-help
+    course-materials: Course Materials
+    contributors: Contributors
+    get-help Get Help with the Course
 
-Understanding Java:
-  id: understanding-java
+understanding-java:
+  name: Understanding Java
   content:
-    Technical Details: technical-details
-    Program Structure: program-structure
-    Variables and Primitive Data Types: variables
-    Using Java Programs: using-java-programs
+    technical-details: Technical Details
+    program-structure: Program Structure
+    variables: Variables and Primitive Data Types
+    using-java-programs: Using Java Programs
 
-Programming Concepts in Java:
-  id: programming-concepts
+programming-concepts:
+  name: Programming Concepts in Java
   content:
-    Arithmetic: arithmetic
-    Booleans: booleans
-    Control Flow: control-flow
-    Loops & Iteration: loops
+    arithmetic: Arithmetic
+    booleans: Booleans
+    control-flow: Control Flow
+    loops: Loops & Iteration
 
-Basic Java:
-  id: basic-java
+basic-java:
+  name: Basic Java
   content:
-    Methods: methods
-    Classes: classes
-    Scope: scope
-    Arrays and ArrayLists: arrays
-    HashMaps: hashmaps
+    methods: Methods
+    classes: Classes
+    scope: Scope
+    arrays: Arrays and ArrayLists
+    hashmaps: HashMaps
 
-Advanced Topics:
-    id: advanced
+advanced:
+    name: Advanced Topics
     content:
-      OOP — Inheritance & Composition: inheritance
-      OOP — Abstraction: abstraction
+      inheritance: OOP — Inheritance & Composition
+      abstraction: OOP — Abstraction
