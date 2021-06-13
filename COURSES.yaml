@@ -1,5 +1,5 @@
 java-fundamentals:
-  isProject: true
+  isProject: false
   name: Java Fundamentals
   authors: Cole Gawin
   color: orange
