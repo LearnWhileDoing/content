@@ -38,7 +38,7 @@ programming-concepts:
     loops:
       name: Loops & Iteration
       description: Do this until that
-    loops:
+    recursion:
       name: Recursion
       description: Did you mean... recursion?
 
