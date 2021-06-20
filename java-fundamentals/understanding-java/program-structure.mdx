@@ -56,43 +56,51 @@ In Java, not everything in one class or program is openly available to another. 
 In this program, you will notice the usage of `void` and `String`. These are Java `data types`, and they tell Java what type of data a specific variable or value will be. In this case, stating `void` before a method tells Java not to expect a value to be returned from this method (this is a *return type*), and using `String[]` tells Java that the following variable will be an [array](http://localhost:8000/arrays) of Strings.
 
 <Quiz>
-    <QuizQuestion>Which code segment is correct?</QuizQuestion>
-    <QuizOption>
-        ```java
-        public class Hello {
-            public void World()
-                System.out.println("");
-        }
-        ```
-    </QuizOption>
-    <QuizOption>
-        ```java
-        public class Hello {
-            public void World() {
-                System.out.println("");
-            }
-        }
-        ```
-    </QuizOption>
-    <QuizOption>
-        ```java
-        public class Hello {
-            public World() {
-                System.out.println("!");
-            }
-        }
-        ```
-    </QuizOption>
-    <QuizOption>
-        ```java
-        public class Hello {
-            public void World() {
-                System.out.println("!")
-            }
-        }
-        ```
-    </QuizOption>
-    <QuizAnswer>
-        2 is the correct response. Notice that each code block is wrapped in curly braces, the method World has a void return type, and that the code statement has a semicolon after it.
-    </QuizAnswer>
+<QuizQuestion>Which code segment is correct?</QuizQuestion>
+<QuizOption>
+
+```java
+public class Hello {
+    public void World()
+        System.out.println("");
+}
+```
+
+</QuizOption>
+<QuizOption>
+
+```java
+public class Hello {
+    public void World() {
+        System.out.println("");
+    }
+}
+```
+
+</QuizOption>
+<QuizOption>
+
+```java
+public class Hello {
+    public World() {
+        System.out.println("!");
+    }
+}
+```
+
+</QuizOption>
+<QuizOption>
+
+```java
+public class Hello {
+    public void World() {
+        System.out.println("!")
+    }
+}
+```
+
+</QuizOption>
+<QuizAnswer>
+2 is the correct response. Notice that each code block is wrapped in curly braces, the method World has a void return type, and that the code statement has a semicolon after it.
+</QuizAnswer>
 </Quiz>
