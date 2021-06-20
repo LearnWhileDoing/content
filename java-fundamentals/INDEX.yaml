@@ -38,6 +38,9 @@ programming-concepts:
     loops:
       name: Loops & Iteration
       description: Do this until that
+    loops:
+      name: Recursion
+      description: Did you mean... recursion?
 
 basic-java:
   name: Basic Java
