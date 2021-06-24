@@ -6,8 +6,10 @@ intro:
       description: Here's what you will need for this course.
     contributors:
       name: Contributors
+      description: The authors who made this course
     get-help:
       name: Get Help with the Course
+      description: What to do when you need help
 
 understanding-java:
   name: Understanding Java
@@ -20,8 +22,10 @@ understanding-java:
       description: What's a Java program like?
     variables:
       name: Variables and Primitive Data Types
+      description: Storing values in Java
     using-java-programs:
       name: Using Java Programs
+      description: How we operate a Java program
 
 programming-concepts:
   name: Programming Concepts in Java
