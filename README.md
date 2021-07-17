@@ -1,8 +1,4 @@
-<div width="256px">
-
-![LWD icon](https://app.learnwhiledoing.org/favicon.png)
-
-</div>
+<img src="https://app.learnwhiledoing.org/favicon.png" alt="LWD icon" width="64px" />
 
 # LearnWhileDoing content
 
