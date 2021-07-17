@@ -1,0 +1,6 @@
+end:
+  name: Java Fundamentals
+  description: Completed the Java Fundamentals basic module.
+  prereqs:
+    courses:
+      - java-fundamentals
