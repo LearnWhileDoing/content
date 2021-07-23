@@ -1,0 +1,81 @@
+intro:
+  name: Introduction
+  content:
+    course-materials:
+      name: Course Materials
+      description: Here's what you will need for this course.
+    contributors:
+      name: Contributors
+      description: The authors who made this course
+    get-help:
+      name: Get Help with the Course
+      description: What to do when you need help
+
+robot-setup:
+  name: Robot Setup
+  content:
+    phone-setup:
+      name: Phone configuration
+      description: How to configure your phones to be used for development and competition
+    ftc-control-system:
+      name: FTC Control System
+      description: About the FTC Control System
+    expansion-hub-setup:
+      name: Expansion Hub setup
+      description: How to setup your expansion hub(s)
+    hardware-mapping:
+      name: Hardware mapping
+      description: Interacting with your hardware from software
+
+programming-setup:
+  name: Programming Setup
+  content:
+    android-studio-setup:
+      name: Android Studio setup
+      description: How to get Android Studio properly setup for development
+    project-folder:
+      name: Using the FTC Project folder
+      description: Set up the FTC Android Studio Project Folder on your system
+
+onbot-java:
+  name: OnBot Java
+  content:
+    opmode:
+      name: What is an OpMode?
+      description: The code that tells your robot how it should behave.
+    first-opmode:
+      name: Your first OpMode!
+      description: The moment you've all been waiting for...
+    using-the-hardware-map:
+      name: Using the Hardware Map
+      description: How to connect to and control hardware with your programs
+    moving-your-robot:
+      name: Moving your robot
+      description: Controlling motors with OnBot Java
+    more-opmode-magic:
+      name: More OpMode magic
+      description: What else can you do within your OpMode?
+
+sample-code:
+  name: Sample Code
+  content:
+    teleop:
+      name: TeleOp
+      description: Basic example of a working TeleOp program
+    autonomous:
+      name: Autonomous
+      description: Basic example of a working Autonomous program
+
+development-patterns:
+  name: Development Patterns
+  content:
+    robot-ctrl:
+      name: RobotCtrl Helper Class
+      description: Make it easier to control your robot
+
+advanced:
+  name: Advanced
+  content:
+    wireless-pushing:
+      name: Hardware — Wireless Pushing
+      description: The future is... wireless.

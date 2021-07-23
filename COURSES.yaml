@@ -10,4 +10,17 @@ java-fundamentals:
     - oop
     - programming
   projectFilesURL:
-  
+
+ftc-robotics:
+  isProject: true
+  name: FTC Robotics Java
+  authors:
+    - Cole Gawin
+  color: red
+  subtitle: Put your Java knowledge towards competing in FTC Robotics challenges with OnBot Java.
+  tags:
+    - java
+    - robotics
+    - ftc
+    - programming
+  projectFilesURL:

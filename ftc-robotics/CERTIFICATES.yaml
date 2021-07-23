@@ -1,0 +1,6 @@
+end:
+  name: FTC Robotics Java
+  description: Completed the FTC Robotics Java course.
+  prereqs:
+    courses:
+      - ftc-robotics
