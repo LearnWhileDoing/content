@@ -2,7 +2,8 @@ java-fundamentals:
   isProject: false
   name: Java Fundamentals
   authors:
-    - Cole Gawin
+    Cole Gawin: https://github.com/chroline
+    u/brandonk8325: https://www.reddit.com/user/brandonk8325
   color: orange
   subtitle: Learn the fundamentals of object-oriented programming, the Java programming language, and how to code in it.
   tags:
@@ -11,11 +12,26 @@ java-fundamentals:
     - programming
   projectFilesURL:
 
+dart-fundamentals:
+  isProject: false
+  name: Dart Fundamentals
+  authors:
+    Cole Gawin: https://github.com/chroline
+  color: red
+  subtitle: Learn the fundamentals of the Dart programming language and how to code in it.
+  tags:
+    - dart
+    - programming
+  projectFilesURL:
+
 ftc-robotics:
   isProject: true
   name: FTC Robotics Java
   authors:
-    - Cole Gawin
+    Cole Gawin: https://github.com/chroline
+    u/brandonk8325: https://www.reddit.com/user/brandonk8325
+    jackcrane: https://github.com/jackcrane
+    FROGbots-4634: https://github.com/FROGbots-4634
   color: red
   subtitle: Put your Java knowledge towards competing in FTC Robotics challenges with OnBot Java.
   tags:
