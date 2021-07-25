@@ -1,0 +1,111 @@
+intro:
+  name: Introduction
+  content:
+    course-materials:
+      name: Course Materials
+      description: Here's what you will need for this course.
+    contributors:
+      name: Contributors
+      description: The authors who made this course
+    get-help:
+      name: Get Help with the Course
+      description: What to do when you need help
+
+understanding-dart:
+  name: Understanding Dart
+  content:
+    what-is-dart:
+      name: What is Dart?
+      description: ...and how can it be used?
+    technical-details:
+      name: Technical Details
+      description: What makes Dart special?
+    program-structure:
+      name: Program Structure
+      description: What does a Dart program look like?
+    variables:
+      name: Variables and Built-in Types
+      description: Store and save data in Dart
+    using-dart-programs:
+      name: Using Dart Programs
+      description: How do we use Dart programs? How does Dart use our code?
+
+programming-concepts:
+  name: Dart Programming Concepts
+  content:
+    arithmetic:
+      name: Arithmetic
+      description: Math is c00l
+    booleans:
+      name: Booleans
+      description: bool isAwesome = true;
+    control-flow:
+      name: Control Flow
+      description: if this then that
+    loops:
+      name: Loops
+      description: Do this, then do this, then do this, then do this...
+    recursion:
+      name: Recursion
+      description: "Did you mean: recursion?"
+    functions:
+      name: Functions
+      description: Perform specific tasks
+    scope:
+      name: Scope
+      description: Peek-a-boo, I see you!
+
+grouping-data:
+  name: Grouping Data
+  content:
+    intro:
+      name: Grouping Data — Intro
+      description: Storing more than one value in a variable
+    sets:
+      name: Sets
+      description: Unordered collection of values
+    lists:
+      name: Lists
+      description: Ordered collection of values
+    maps:
+      name: Maps
+      description: Key-value mappings
+
+classes:
+  name: Classes
+  content:
+    intro:
+      name: Classes — Intro
+      description: The building blocks of your Dart (and Flutter) programs
+    dartpad:
+      name: Setting up DartPad
+      description: Use a tool to test out our code
+    about:
+      name: About classes
+      description: What are classes?
+    create:
+      name: Creating a Class
+      description: Coding our "Cars" in Dart
+    access-specification:
+      name: Access Specification
+      description: Hide and seek in class!
+    methods:
+      name: Class Methods
+      description: Writing functions that belong to classes
+    inheritance:
+      name: Inheritance
+      description: The apple doesn't fall far from the tree!
+    build-a-house:
+      name: Build a House (Challenge)
+      description: Use your knowledge of classes to "build" a house
+
+advanced:
+  name: Advanced
+  content:
+    error-handling:
+      name: Handling Errors
+      description: Expecting the unexpected!
+    asynchronicity:
+      name: Asynchronicity
+      description: "waiting... loading..."
+    

@@ -1,0 +1,124 @@
+*Lists*, or *arrays* as they are commonly known in other languages, are a common way to store a collection of values. Unlike sets, lists are ordered, which means that the order in which you insert (add) a value into a list matters, and lists also do not need to contain only unique values.
+
+```
+|    0    |    1    |    2    | 
+|---------|---------|---------|
+|  "hey"  | "hello" | "howdy" |
+```
+
+Above is a graphical representation of a list. The top row shows the *index* of the values, and the bottom row shows the values. We call a value in a list an "element". Each element has an index that corresponds to its location in the array.
+
+**Notice how the index starts at 0.** In Dart (and most other languages), the indices of lists/arrays begin at 0, so the first element in a list has the index 0, the second has the index 1, etc.
+
+# Creating a list
+
+Now that we know what a list is, how do we make one? Here are 5 different ways to create lists:
+
+```java
+var list1 = [];
+var list2 = List();
+var list3 = [1, 2];
+var list4 = <int>[];
+var list5 = List(4);
+```
+
+The ways in which lists 1-4 are created are explained in the sets page.
+
+In `list5`, we create a fixed-sized list. By default, lists in Dart are of dynamic length. That means there is no fixed limit of the size of your lists, so you are able to add as many elements as you desire. However, in `list5`, we pass a parameter to the `List` class constructor that specifies the size of the list.
+
+# Common operations
+
+Think of lists as an extension of sets, and as such have most of the same methods as set (including but not limited to `add`/`+=`, `remove`, and `contains`). Here we will go over some methods that are unique to lists.
+
+## Get value at index
+
+To get a value at an index, we use *bracket notation* (as opposed to dot notation):
+
+```java
+list[1]
+
+/* List:
+|    0    |    1    |    2    | 
+|---------|---------|---------|
+|  "hey"  | "hello" | "howdy" |
+
+Therefore, list[1] = "hello"
+*/
+```
+
+## Get index of value
+
+To get the index of a value, we use the `indexOf` method like so:
+
+```java
+list.indexOf("hello")
+
+/* List:
+|    0    |    1    |    2    | 
+|---------|---------|---------|
+|  "hey"  | "hello" | "howdy" |
+
+Therefore, list.indexOf("hello") = 1
+*/
+```
+
+## Update an element
+
+To update the value of an element at a provided index, we can use the `[]=` operator:
+
+```java
+list[0] = "hi";
+
+/* Before update:
+|    0    |    1    |    2    | 
+|---------|---------|---------|
+|  "hey"  | "hello" | "howdy" |
+
+After update:
+|    0    |    1    |    2    |
+|---------|---------|---------|
+|   "hi"  | "hello" | "howdy" |
+*/
+```
+
+## Insert a value
+
+To insert a value at a specific location in the list, we use the `insert` method like so:
+
+```java
+list.insert(0, "hi");
+
+/* Before insertion:
+|    0    |    1    |    2    | 
+|---------|---------|---------|
+|  "hey"  | "hello" | "howdy" |
+
+After insertion:
+|    0    |    1    |    2    |    3    |
+|---------|---------|---------|---------|
+|   "hi"  |  "hey"  | "hello" | "howdy" |
+*/
+```
+
+Notice that the indices change because the order has changed!
+
+## Remove at index
+
+To remove a value at a specified index in the list, we use the `removeAt` method like so:
+
+```java
+list.removeAt(1);
+
+/* Before deletion:
+|    0    |    1    |    2    | 
+|---------|---------|---------|
+|  "hey"  | "hello" | "howdy" |
+
+After deletion:
+|    0    |    1    | 
+|---------|---------|
+|  "hey"  | "howdy" |
+*/
+```
+
+Notice that the indices change because the order has changed!

@@ -1,0 +1,51 @@
+Cars aren't considered very useful unless they can perform specific tasks. In Dart, these tasks are written as methods. We will make the following methods for our `Car` class: *beep* and *drive*.
+
+Go back to our `Car` class, and write the following method:
+
+```java
+class Car {
+  /* instance variables... */
+
+  void beep() {
+    print("BEEP");
+  }
+}
+```
+
+This can be written anywhere within the Car class, but methods are typically located underneath the constructor.
+
+The `beep` method doesn't need to return anything back, so the `void` return type is used. Also, we want our Car to be able to be `beep`ed by the driver, so we must make it public to make it usable.
+
+If we go back into our `Main.java` file, we can now call the beep method.
+
+```java
+myCar.beep();
+```
+
+In the console to the right, you should see **BEEP**. Your Car can now beep!
+
+You access methods on an object the same way you access instance variables using dot notation.
+
+We can write the same method but with a different method name and a different `println` argument for the `drive` method like so:
+
+```java
+void drive() {
+  print("VROOM");
+}
+```
+
+Now we can go back to the `Main.java` file and call the `drive` method as well.
+
+```java
+myCar.drive();
+```
+
+# Methods vs. Functions
+
+What the difference between methods and functions? Well, that's kind of a trick questions, because they are basically the same thing!
+
+<Callout>
+
+Methods are functions that belong to a class, like how instance variables are variables that belong to a class.
+
+</Callout>

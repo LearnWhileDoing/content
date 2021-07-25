@@ -1,0 +1,91 @@
+So far, we've discussed grouping data in unordered *sets* and ordered *lists*. Sets and Lists work great for simple scenarios when you just need to store a group of values instead of a single value. However, there are some more advanced scenarios in which sets and lists simply won't cut it.
+
+Let's examine the classic example of a phone book. A phone book has a list of contacts, and each contact has a phone number. We can represent this data with a table:
+
+```
+|     name     |    number    |
+|--------------|--------------|
+| John Smith   |   123-4567   |
+| Katy Jones   |   765-4321   |
+```
+
+This table can't be directly represented in sets or lists without some manipulation of the data. For example, we could make a 2D list called `contacts` in which every value is a list contains the contact name and number. This, however, will make your life as a developer much more confusing.
+
+To get "Katy Jones"'s number, you would have to check every value in the `contacts` list to see if the first value of the list value is "Katy Jones", and then we could have to get the number of that list. That... is incredibly confusing just writing it! Imagine having to code that for this simple contact list; and then, imagine a more complex example in which the contact can have multiple numbers, email addresses, and nicknames! Obviously, lists aren't going to cut it for this scenario.
+
+# Maps
+
+Fortunately, there is a solution. In the above example, we were *mapping*, or connecting, a *key* to a *value* (the key being the name and the value being the number). *Maps* allow us to do just that with code.
+
+How would we create the phone book example using maps?
+
+```dart
+final phoneBook = Map<String, String>();
+```
+
+First, we create a new `Map` and specify the generic types. Both the key (contact name) and value (phone number) will be stored as strings for this example, so we use `<String, String>` as the generic types.
+
+How do we add a contact to the phone book?
+
+```dart
+phoneBook["John Smith"] = "123-4567";
+phoneBook["Katy Jones"] = "765-4321";
+```
+
+How do we retrieve a value from the phone book?
+
+```dart
+final johnSmithNumber = phoneBook["John Smith"];
+```
+
+You might recognize this bracket syntax from the lists lesson. That's because, on a high level, **lists are maps!** The keys for lists are integers, so instead of mapping a `string` to a value, you simply map an `int` to a value.
+
+# Common operations
+
+We just covered basic insert/update and read operations.
+
+## Remove at key
+
+To remove a value at a specified key in the map, use the `remove` method like so:
+
+```dart
+phoneBook.remove("John Smith");
+
+/* Before deletion:
+|     key     |    value    |
+|-------------|--------------|
+| John Smith  |   123-4567   |
+| Katy Jones  |   765-4321   |
+*/
+
+/* After deletion:
+|     key     |    value    |
+|-------------|--------------|
+| Katy Jones  |   765-4321   |
+*/
+```
+
+## Check presence of key or value
+
+To check if a key or a value is in the map, use the `containsKey` or `containsValue` method like so:
+
+```dart
+phoneBook.containsKey("Bob Brown"); // false
+phoneBook.containsvalue("765-4321 "); // true
+```
+
+# When to use Maps or Classes
+
+**Be cognizant of choosing to use maps.** Many times, programmers will choose to use maps to represent their data instead of creating a class. By creating a class, you know which properties are present; with maps, there is a certain level of uncertainty which can lead to unforeseen errors in your code.
+
+A good rule of thumb is that whenever you know which properties/keys should have values associated with them, create a class that represents this data. For example, if you are making a contact book in which each contact has a phone number, email address, and nickname, make a `Contact` property with all of those keys, and then make a `Map<String, Contact>` variable for the contact book itself.
+
+# Additional Resources
+
+<Bookmark url="https://www.tutorialspoint.com/dart_programming/dart_programming_map.htm">
+Dart Programming - Map
+</Bookmark>
+
+<Bookmark url="https://dart.dev/guides/language/language-tour#maps">
+Language tour | Dart
+</Bookmark>

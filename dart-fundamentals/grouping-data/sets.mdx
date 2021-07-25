@@ -1,0 +1,98 @@
+*Sets* a common way to store a collection of values in Dart. Sets are unordered, and each item must be unique.
+
+```
+|---------|---------|---------|
+|  "hey"  | "hello" | "howdy" |
+|---------|---------|---------|
+```
+
+Above is a graphical representation of a set. We call a value in a set an "element".
+
+# Creating a set
+
+Now that we know what a set is, how do we make one? Here are 5 different ways to create sets:
+
+```java
+Set set1 = {};
+var set2 = Set();
+var set3 = {1, 2};
+var set4 = <int>{};
+```
+
+In `set1` and `set2`, we create a dynamic set. There is no boundary on either the type or size of the set. In `set1`, the set is created using what is known as a *collection literal* because instead of writing out the full class initialization like we do in `set2`, we simply use braces `{}` to tell Dart that this variable is a set.
+
+If you use the collection literal for sets, you must specify that the type of the variable is indeed `Set` in the initialization of the variable. This is because the collection literal of sets are the same for maps, and if you don't specify if the variable is a set or a map, Dart won't be able to tell.
+
+In `set3` and `set4`, we create a typed set. This means that we can only add values of a specific type to the set. In `set3`, we initialize the set with two integer values; from those values, Dart can *infer* that the set will be a typed list for integer values. In `set4`, we add a *generic* (that's the `<int>`) in front of the collection literal initialization, which tells Dart that this list is a typed set for integer values.
+
+# Common operations
+
+## Add a value
+
+There are two ways to add a value to a set:
+
+```java
+list.add("hi"); // using the add method
+list += "hi"; // using the + operator
+
+/* Before addition:
+|---------|---------|---------|
+|  "hey"  | "hello" | "howdy" |
+|---------|---------|---------|
+
+After addition:
+|---------|---------|---------|---------|
+|  "hey"  | "hello" | "howdy" |   "hi"  |
+|---------|---------|---------|---------|
+*/
+
+// What happens when we add a value that is already in the set?
+
+list += "hi";
+
+/* Before addition:
+|---------|---------|---------|---------|
+|  "hey"  | "hello" | "howdy" |   "hi"  |
+|---------|---------|---------|---------|
+
+After addition:
+|---------|---------|---------|---------|
+|  "hey"  | "hello" | "howdy" |   "hi"  |
+|---------|---------|---------|---------|
+*/
+```
+
+## Remove a value
+
+To remove a value in the list, we use the `remove` method like so:
+
+```java
+list.remove("hey");
+
+/* Before removal:
+|---------|---------|---------|
+|  "hey"  | "hello" | "howdy" |
+|---------|---------|---------|
+
+After removal:
+|---------|---------|
+| "hello" | "howdy" |
+|---------|---------|
+*/
+```
+
+## Check if set contains a value
+
+To check if a set has (contains) a value, we use the `contains` method like so:
+
+```java
+list.contains("hey"); // returns boolean
+
+/* List:
+|---------|---------|---------|
+|  "hey"  | "hello" | "howdy" |
+|---------|---------|---------|
+
+Therefore, list.contains("hey") == true
+*/
+```

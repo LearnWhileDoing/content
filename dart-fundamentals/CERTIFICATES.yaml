@@ -1,0 +1,27 @@
+understanding-dart:
+  name: Understanding Dart
+  description: Completed the Understanding Dart chapter
+  prereqs:
+    pages:
+      - dart-fundamentals/understanding-dart.what-is-dart
+      - dart-fundamentals/understanding-dart.technical-details
+      - dart-fundamentals/understanding-dart.program-structure
+      - dart-fundamentals/understanding-dart.variables
+      - dart-fundamentals/understanding-dart.using-dart-programs
+    challenges:
+      - dart-fundamentals/understanding-dart.variables
+      - dart-fundamentals/understanding-dart.using-dart-programs
+
+asynchronicity:
+  name: Asynchronicity in Dart
+  description: Learned about the concept of asynchronicity in Dart.
+  prereqs:
+    pages:
+      - dart-fundamentals/advanced.asynchronicity
+
+end:
+  name: Programming in Dart
+  description: Completed the Programming in Dart basic module.
+  prereqs:
+    courses:
+      - dart-fundamentals

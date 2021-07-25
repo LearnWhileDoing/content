@@ -1,0 +1,56 @@
+*The code and explanations used in this section is borrowed from and inspired by the* *[Dart language tour](https://dart.dev/guides/language/language-tour).*
+
+# **Basic Dart program**
+
+Let's look at a basic Dart program to understand more about the Dart programming language.
+
+```dart
+// Define a function.
+String displayInteger(int aNumber) {
+  String display = "The number is $aNumber."; // Concatenate (combine) `aNumber` variable into a string.
+  return display; // Return the String.
+}
+
+// This is where the app starts executing.
+void main() {
+  var number = 42; // Declare and initialize a variable.
+  String text = displayInteger(number); // Call a function.
+  print(text); // Print to console.
+}
+```
+
+You can run this program on DartPad at [https://dartpad.dev/78de3f702019482ba30def50706cbbe6](https://www.notion.so/78de3f702019482ba30def50706cbbe6).
+
+This program will print `The number is 42` to the console. In every Dart program, there are key parts to the language that you will notice.
+
+## **Dart-specific syntax**
+
+Notice how each ***block*** of code begins and ends with *curly braces*. This is evident in the methods `displayInteger` and `main`. Curly braces show Dart what part of your program belongs with which block of code.
+
+Also, each *code statement* must end with a semicolon.
+
+## **Comments**
+
+When we write programs in any language, we want to be able to understand what specific parts of our code does. We can write *comments* in our code to give ourselves and other people an idea of what this code does.
+
+There are two ways of writing comments in Dart:
+
+`/* multi-line comment`
+
+`// single line comment`
+
+Multi-line comments must start with `/*` and end with `*/`
+
+## **Methods**
+
+Methods, or functions, are a set of commands that are used perform specific actions. Methods help us to be able to reuse code, so that we can write it once and then call it again anywhere else in our code.
+
+We declare two *top-level* methods, meaning that they are stand alone by themselves (notice how they are not wrapped in another block of code), `displayInteger` and `main`. Top-level methods are globally available, meaning that they can be used anywhere in your program. **The `main` method is the** ***entry-point*** **of all Dart programs,** which means that the program runs that method. You can (and should) write other methods, but the main method is where your program begins.
+
+You might notice that we never declare the `print` method, so how are we able to use it? The `print` method is provided to us by the Dart language itself, so it is available even though we didn't define what it does. The `print` method prints data to the console that is running the program.
+
+## **Data Types**
+
+In this program, you will notice the usage of `void` and `String`. These are Dart *data types*, and they tell Dart what type of data a specific value will be. In this case, stating `void` before a method tells Dart not to expect a value to be returned from this method (this is a *return type*), and stating `String` will tell Dart that this method should return a `String`.
+
+Learn more about data types in the [variables lesson](https://github.com/LearnWhileDoing/dart-fundamentals/blob/main/understanding-dart/program-structure.md).

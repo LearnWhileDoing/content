@@ -14,7 +14,7 @@ java-fundamentals:
 
 dart-fundamentals:
   isProject: false
-  name: Dart Fundamentals
+  name: Programming in Dart
   authors:
     Cole Gawin: https://github.com/chroline
   color: red

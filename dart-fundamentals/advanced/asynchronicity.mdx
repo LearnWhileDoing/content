@@ -1,0 +1,61 @@
+In many other programming languages, there is a concept known as *asynchronicity*. *A*, meaning not: *syn*, meaning together: *chron*, meaning time. Althogether, "asynchronous" means not at the same time. You might have seen this term used to describe remote learning classes: classes that were *asynchronous* meant that you could do work at your own pace, or at least at a separate pace from others.
+
+When we think of computers, we often think of them running things instantaneously. However, that isn't quite the case! For example, when you visit a website, it will take a few seconds to load. While that website is loading, however, you are able to do other things on your computer, like move your mouse around or open a new application. This is a perfect example of asynchronicity! You can do other things while waiting for a task, like loading a website, to complete.
+
+There are scenarios in programming that involve asynchronicity as well. For example, loading content from a different website and reading or writing to a file are all tasks that do not complete instantaneously, and are occasions in which asynchronous programming is used.
+
+# Futures
+
+In Dart, these kinds of asynchronous tasks can be represented as `Future`s because, well, they will complete in the future! When you *spawn* a `Future` (when you start an asynchronous task), you are dealing with asynchronous programming.
+
+Let's use a video made by the Google Flutter team to dive deep into the world of `Future`s!
+
+<Video url="https://youtu.be/OTS-ap9_aXc">
+
+Dart Futures - Flutter in Focus
+
+</Video>
+
+<p />
+
+# Streams
+
+Sometimes, unlike in the case of `Future`s, data doesn't come in once and only once. Sometimes, your code deals with a *stream* of data. For instance, a live chat app needs a *stream* of data that a user sends to you. In that case, you would use a `Stream`!
+
+<Video url="https://youtu.be/nQBpOIHE4eE">
+
+Dart Streams - Flutter in Focus
+
+</Video>
+
+<p />
+
+# Async/await
+
+So far, all of the examples in the previous two videos have only used *callbacks* on the `Future`s and `Stream`s. Callbacks are class methods that accept a function and *call* that function when something happens: in the case of a `Future` or `Stream`, the callback is called when the value is updated.
+
+However, there is another way of handling asynchronous values that is built into Dart: the `async` and `await` keywords. Let's take a look at them now.
+
+<Video url="https://youtu.be/SmTCmDMi4BY">
+
+Async/Await - Flutter in Focus
+
+</Video>
+
+<p />
+
+# Generator functions
+
+We just discussed how a function can handle each instruction inside of it one-by-one with `async` and `await`. Now, we will go over how a function can incrementally *return* a value to its original caller.
+
+<Video url="https://youtu.be/TF-TBsgIErY">
+
+Generator Functions - Flutter in Focus
+
+</Video>
+
+<Callout>
+
+Generator functions are, admittedly, kind of strange at first. If they feel a little intimidating to you at first, no worries. If future project on LearnWhileDoing make use of generator functions, we will explain their purpose and how they are used in more specific detail for those projects!
+
+</Callout>
