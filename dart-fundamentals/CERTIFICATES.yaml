@@ -1,6 +1,6 @@
 understanding-dart:
   name: Understanding Dart
-  description: Completed the Understanding Dart chapter
+  description: Completed the Understanding Dart chapter.
   prereqs:
     pages:
       - dart-fundamentals/understanding-dart.what-is-dart
