@@ -1,0 +1,126 @@
+Sometimes, mistakes happen. But it’s how we deal with them that counts! This is true in life—and in coding!
+
+Even the best coders have mistakes that occur in their programs, and that’s completely normal. Most of the time, these mistakes can be prevented, or sometimes mistakes are expected in your program. Other times, these mistakes are neither preventable nor expected.
+
+But wait… what counts as a “mistake” in Dart? Before we can discuss how we can deal with and handle mistakes, we must go over the two main types of “mistakes”, known as *failures,* in Dart.
+
+# Failure Type #1: Errors
+
+
+Errors are failures that are meant to be *prevented*. Your production-ready (finalized version meant to be used by the public) programs shouldn't have to deal with a Dart `Error`. If it does, that means that you need to fix part of your code. To quote the official Dart documentation, “An `Error` object represents a program failure that the programmer should have avoided.”
+
+`Error`s usually arise when you call a function improperly or use bad syntax in your code. For example, if you write a method with an argument that is supposed to accept an integer greater than 5 but you call that method and provide the number 4, this could raise an `Error` since you used the method incorrectly.
+
+<Bookmark url="https://api.dart.dev/stable/2.4.0/dart-core/Error-class.html">
+
+Error class - dart:core library - Dart API
+
+</Bookmark>
+
+# Failure Type #2: Exceptions
+
+
+Exceptions are mistakes that are specifically designed to be *handled* and dealt with. Exceptions are normal parts of your programs, as long as you handle them properly. To quote the official Dart documentation, "An `Exception` is intended to convey information to the user about a failure, so that the error can be addressed programmatically. It is intended to be caught, and it should contain useful data fields."
+
+An example of an `Exception` would be making a network request to a website that doesn't exist. That would give us an `Exception` that our program would have to properly deal with. Of course, you should change this request in your code. But the internet is constantly changing, and a website going offline shouldn't make your entire app crash! As long as you, the diligent programmer you are, handles this `Exception` properly, then your program should still run even when coming across this failure.
+
+<Callout>
+
+The main difference between an `Error` and an `Exception` is that an `Exception` are reasonable failures that your app runs into that could be detected in testing, while an `Error` in an *un*reasonable failure that you need fix in your code.
+
+</Callout>
+
+---
+
+Now that we have gone over the two types of failures in Dart, we can discuss how to handle them. As previously mentioned, `Error`s aren't meant to be handled with by your program, but rather by the programmer before the program runs. Therefore, your code should only be dealing with `Exception`s.
+
+To talk about handling errors, we will use an example that demonstrates all of the ways in which Dart helps us to deal with potential errors that we come across in our program.
+
+```dart
+// import 'dart:convert' as convert;
+// import 'package:http/http.dart' as http;
+
+try {
+  final response = await http.get(url);
+  if (response.statusCode != 200) throw HttpException('${response.statusCode}');
+  final jsonMap = convert.jsonDecode(response.body);
+} on SocketException {
+  print('No Internet connection 😑');
+} on HttpException {
+  print('Unable to find the URL 😱');
+} on FormatException {
+  print('Bad response format 👎');
+} catch (e) {
+  print('Unknown error 🥴: $e');
+}
+```
+
+
+This piece of code does a lot:
+
+
+1. First, it makes a request to a URL to fetch some data.
+2. If this request responds with a "status code" that isn't `200` (`200` is the standardized code meaning the response was successful), then `throw` an `HttpException`.
+3. Finally, attempt to parse this data from the `JSON` format into a Dart `Map`.
+
+Let’s go over how potential errors are dealt with in this code.
+
+# throw
+
+
+To communicate that a failure has occured in the program, we use the `throw` statement to "throw" the failure. In the above example, we "throw” an `HttpException` when we get an unsuccessful network response.
+
+It seems counterintuitive to make your own exceptions in your code, right? Wouldn’t that be something you want to avoid? Well, as we discussed earlier, exceptions are normal parts of your code so long as you handle them properly.
+
+Later on, we deal with the failure that we “threw”.
+
+# try / on / catch blocks
+
+
+`try / on / catch` blocks are the fundamentals of how we deal with exceptions in Dart. The `try / on / catch` block is made up of individual blocks that each serve their own purpose.
+
+## try
+
+
+The `try` block of the `try / on / catch` block is where you "try” code that may produce a failure. For example, when we make our potentially unsuccessful network request, we wrap these lines in the `try` block. When we `throw` the exception is also contained in the `try` block. Wherever the error occurs *must* be in the `try` block.
+
+## on
+
+
+Sometimes you know exactly which exceptions may be "thrown" from the `try` block and you have a specific way of dealing with each. In our network example, the 3 known potential exceptions are `SocketException`, `HttpException`, and `FormatException`. Each of these `Exception`s are dealt with differently, so they each receive their own `on` block.
+
+## catch
+
+
+If you don’t have a specific way of dealing with different potential known `Exception`s, then the `catch` block serves as a default fallback option. The `catch` block provides you with the failure itself so that you can better communicate with the program what failure occured. In our example, the `catch` block is called when the exception isn't any of the 3 known potential exceptions.
+
+## finally
+
+
+`finally` blocks are placed at the end of  the `try / on / catch / finally` block, and they run after the completion your `try`, `on`, and/or `catch` blocks. Regardless of what happens in these blocks, the `finally` block will **always** execute.
+
+You may be wondering, "what is the point of the `finally` block? Can't I just put my code *after* the `try / on / catch` block?" That's a very good question!`finally` blocks are used for two main reasons:
+
+
+1. **Code organization**. In many cases, the `finally` block won't be used for any purpose other than making your code more legible. This is called *syntactic sugar*. `try…catch…finally` is a common pattern in coding because it is very intuitive to understand. First, you `try` a block of code; then, you `catch` any errors; `finally`, you execute the rest of your code. 
+2. **Return overrides**. The code that executes in the `finally` block will *always* run after the `try`, `on`, and `catch` blocks, regardless of what happens in them. For example, if you `return` a value in any of these blocks, the `finally` block will *still* run after the return statement. Therefore, if you `return` a value in the `finally` block, it will override any previous values.
+
+<Callout>
+
+When working with `try / on / catch / finally` blocks, the `try` block *must* come first, followed by any optional `on` blocks, followed by an optional `catch` block, followed by an optional `finally` block. A `try` block must always be paired with either `on / catch` blocks, a `finally` block, or both.
+
+</Callout>
+
+# Additional resources
+
+<Bookmark url="https://dart.dev/guides/language/language-tour#exceptions">
+
+Language Tour | Dart
+
+</Bookmark>
+
+<Bookmark url="https://www.tutorialspoint.com/dart_programming/dart_programming_exceptions.htm">
+
+Dart Programming - Exceptions - Tutorialspoint
+
+</Bookmark>
