@@ -9,7 +9,11 @@ This line of code is called a *variable declaration*, and consists of a left an
 - The left-hand side of a variable declaration has a data type (`int`) and a name (`amount`), in that order. This tells your computer that the variable `amount` has the data type `int`, which will never change.
 - The right-hand side is the *value* which the variable will store. In this case, the value will be 3.
 
-{% hint style="info" %} Values *can* change, data types *cannot*. {% endhint %}
+<Callout>
+
+Values *can* change, data types *cannot*.
+
+</Callout>
 
 # **Data Types**
 
@@ -37,9 +41,11 @@ Sometimes, you have data that isn't always a number or a String. In these cases,
 
 For example, you will often take data from a user. This data can be provided as either a String or a number:
 
-`dynamic userData = "...";
+```dart
+dynamic userData = "...";
 // or...
-dynamic userData = 123;`
+dynamic userData = 123;
+```
 
 As you can see, when using the `dynamic` keyword, the value can be of any type.
 
