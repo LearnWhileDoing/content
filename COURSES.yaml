@@ -1,3 +1,7 @@
+#################
+# BASIC MODULES #
+#################
+
 java-fundamentals:
   isProject: false
   name: Java Fundamentals
@@ -24,6 +28,10 @@ dart-fundamentals:
     - programming
   projectFilesURL:
 
+############
+# PROJECTS #
+############
+
 ftc-robotics:
   isProject: true
   name: FTC Robotics Java
@@ -35,8 +43,23 @@ ftc-robotics:
   color: red
   subtitle: Put your Java knowledge towards competing in FTC Robotics challenges with OnBot Java.
   tags:
-    - java
     - robotics
     - ftc
     - programming
+    - java
+  projectFilesURL:
+
+barcode-scanner:
+  isProject: true
+  name: Flutter Barcode Scanner
+  authors:
+    Cole Gawin: https://github.com/chroline
+  color: blue
+  subtitle: Learn about what it means to be an app developer, hybrid app development, the Dart programming language, and the Flutter framework.
+  tags:
+    - flutter
+    - app-development
+    - oop
+    - programming
+    - dart
   projectFilesURL:

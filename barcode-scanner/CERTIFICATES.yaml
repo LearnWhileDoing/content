@@ -1,0 +1,16 @@
+concepts:
+  name: Flutter Concepts
+  description: Learned about the fundamental concepts of Flutter.
+  prereqs:
+    pages:
+      - barcode-scanner/intro-to-flutter.hybrid-apps
+      - barcode-scanner/intro-to-flutter.what-is-flutter
+      - barcode-scanner/intro-to-flutter.working-with-flutter
+      - barcode-scanner/thinking-flutter.intro
+      - barcode-scanner/thinking-flutter.declarative-programming
+      - barcode-scanner/thinking-flutter.flutter-declarativity
+      - barcode-scanner/thinking-flutter.widgets
+      - barcode-scanner/thinking-flutter.composing-layouts
+      - barcode-scanner/thinking-flutter.state-management
+      - barcode-scanner/thinking-flutter.conclusion
+      

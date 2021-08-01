@@ -1,0 +1,60 @@
+intro:
+  name: Introduction
+  content:
+    course-materials:
+      name: Course Materials
+      description: Here's what you will need for this course.
+    contributors:
+      name: Contributors
+      description: The authors who made this course
+    get-help:
+      name: Get Help with the Course
+      description: What to do when you need help
+
+intro-to-flutter:
+  name: Intro to Flutter
+  content:
+    hybrid-apps:
+      name: Hybrid apps
+      description: Apps that run on multiple platforms
+    what-is-flutter:
+      name: What is Flutter?
+      description: ...and what can we do with it?
+    working-with-flutter:
+      name: Working with Flutter
+      description: "everything is a widget"
+
+thinking-flutter:
+  name: Thinking Flutter
+  content:
+    intro:
+      name: Thinking Flutter — Intro
+      description: Thinking like a Flutter developer
+    declarative-programming:
+      name: Declarative Programming
+      description: The pattern and style of programming used in Flutter
+    flutter-declarativity:
+      name: Flutter "declarativity"
+      description: Using declarative programming with Flutter
+    widgets:
+      name: Widgets
+      description: '"Everything is a widget!"'
+    composing-layouts:
+      name: Composing layouts
+      description: Designing and coding layouts with Flutter Widgets
+    state-management:
+      name: State management
+      description: How to manage data and state
+    conclusion:
+      name: Conclusion
+      description: A quick review
+
+setup:
+  name: Setting up Flutter
+  content:
+    vscode:
+      name: Installing VS Code
+      description: How to install VS Code onto your computer
+    flutter:
+      name: Installing Flutter
+      description: How to install Flutter onto your computer
