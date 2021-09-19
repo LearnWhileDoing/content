@@ -49,17 +49,18 @@ ftc-robotics:
     - java
   projectFilesURL:
 
-barcode-scanner:
-  isProject: true
-  name: Flutter Barcode Scanner
-  authors:
-    Cole Gawin: https://github.com/chroline
-  color: blue
-  subtitle: Learn about what it means to be an app developer, hybrid app development, the Dart programming language, and the Flutter framework.
-  tags:
-    - flutter
-    - app-development
-    - oop
-    - programming
-    - dart
-  projectFilesURL:
+
+#barcode-scanner:
+#  isProject: true
+#  name: Flutter Barcode Scanner
+#  authors:
+#    Cole Gawin: https://github.com/chroline
+#  color: blue
+#  subtitle: Learn about what it means to be an app developer, hybrid app development, the Dart programming language, and the Flutter framework.
+#  tags:
+#    - flutter
+#    - app-development
+#    - oop
+#    - programming
+#    - dart
+#  projectFilesURL:
