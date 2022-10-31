@@ -2,7 +2,19 @@
 # BASIC MODULES #
 #################
 
+html-css:
+  isLocked: true
+  isProject: false
+  name: Intro to Web Development
+  authors:
+    Cole Gawin: https://github.com/chroline
+  color: blue
+  subtitle: 
+  tags:
+  projectFilesURL:
+
 java-fundamentals:
+  isLocked: false
   isProject: false
   name: Java Fundamentals
   authors:
@@ -17,22 +29,84 @@ java-fundamentals:
   projectFilesURL:
 
 dart-fundamentals:
+  isLocked: false
   isProject: false
   name: Programming in Dart
   authors:
     Cole Gawin: https://github.com/chroline
-  color: red
+  color: sky
   subtitle: Learn fundamentals programming concepts, how they apply to the Dart programming language, and how to code with Dart.
   tags:
     - dart
     - programming
-  projectFilesURL:
+  projectFilesURL: 
+
+graphic-design:
+  isLocked: true
+  isProject: false
+  name: Graphic Design Fundamentals
+  authors:
+    Cole Gawin: https://github.com/chroline
+  color: blue
+  subtitle: 
+  tags:
+  projectFilesURL: 
 
 ############
 # PROJECTS #
 ############
 
+barcode-scanner:
+  isLocked: false
+  isProject: true
+  name: Flutter Barcode Scanner
+  authors:
+    Cole Gawin: https://github.com/chroline
+  color: blue
+  subtitle: Learn about what it means to be an app developer, hybrid app development, the Dart programming language, and the Flutter framework.
+  tags:
+    - flutter
+    - app-development
+    - oop
+    - programming
+    - dart
+  projectFilesURL: https://github.com/LearnWhileDoing/barcode-scanner
+
+3d-wheel:
+  isLocked: true
+  isProject: true
+  name: 3D Wheel in CAD
+  authors:
+    Cole Gawin: https://github.com/chroline
+  color: blue
+  subtitle: 
+  tags:
+  projectFilesURL: 
+
+ui-ux:
+  isLocked: true
+  isProject: true
+  name: Design a Mad-Libs App
+  authors:
+    Cole Gawin: https://github.com/chroline
+  color: blue
+  subtitle: 
+  tags:
+  projectFilesURL: 
+
+soccer-calculus:
+  isLocked: true
+  isProject: true
+  name: Calculus of Soccer
+  authors:
+    Cole Gawin: https://github.com/chroline
+  color: blue
+  subtitle: 
+  tags:
+  projectFilesURL: 
+
 ftc-robotics:
+  isLocked: false
   isProject: true
   name: FTC Robotics Java
   authors:
@@ -48,19 +122,4 @@ ftc-robotics:
     - programming
     - java
   projectFilesURL:
-
-
-#barcode-scanner:
-#  isProject: true
-#  name: Flutter Barcode Scanner
-#  authors:
-#    Cole Gawin: https://github.com/chroline
-#  color: blue
-#  subtitle: Learn about what it means to be an app developer, hybrid app development, the Dart programming language, and the Flutter framework.
-#  tags:
-#    - flutter
-#    - app-development
-#    - oop
-#    - programming
-#    - dart
-#  projectFilesURL:
+  
