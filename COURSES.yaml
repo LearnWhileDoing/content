@@ -1,17 +1,6 @@
-#################
-# BASIC MODULES #
-#################
-
-html-css:
-  isLocked: true
-  isProject: false
-  name: Intro to Web Development
-  authors:
-    Cole Gawin: https://github.com/chroline
-  color: blue
-  subtitle: 
-  tags:
-  projectFilesURL:
+############
+# UNLOCKED #
+############
 
 java-fundamentals:
   isLocked: false
@@ -39,22 +28,7 @@ dart-fundamentals:
   tags:
     - dart
     - programming
-  projectFilesURL: 
-
-graphic-design:
-  isLocked: true
-  isProject: false
-  name: Graphic Design Fundamentals
-  authors:
-    Cole Gawin: https://github.com/chroline
-  color: blue
-  subtitle: 
-  tags:
-  projectFilesURL: 
-
-############
-# PROJECTS #
-############
+  projectFilesURL:
 
 barcode-scanner:
   isLocked: false
@@ -71,6 +45,57 @@ barcode-scanner:
     - programming
     - dart
   projectFilesURL: https://github.com/LearnWhileDoing/barcode-scanner
+
+ftc-robotics:
+  isLocked: false
+  isProject: true
+  name: FTC Robotics Java
+  authors:
+    Cole Gawin: https://github.com/chroline
+    u/brandonk8325: https://www.reddit.com/user/brandonk8325
+    jackcrane: https://github.com/jackcrane
+    FROGbots-4634: https://github.com/FROGbots-4634
+  color: red
+  subtitle: Put your Java knowledge towards competing in FTC Robotics challenges with OnBot Java.
+  tags:
+    - robotics
+    - ftc
+    - programming
+    - java
+  projectFilesURL:
+
+html-css:
+  isLocked: true
+  isProject: false
+  name: Intro to Web Development
+  authors:
+    Cole Gawin: https://github.com/chroline
+  color: blue
+  subtitle: 
+  tags:
+  projectFilesURL:
+
+python:
+  isLocked: true
+  isProject: false
+  name: Python Fundamentals
+  authors:
+    Cole Gawin: https://github.com/chroline
+  color: blue
+  subtitle: 
+  tags:
+  projectFilesURL: 
+
+graphic-design:
+  isLocked: true
+  isProject: false
+  name: Graphic Design Fundamentals
+  authors:
+    Cole Gawin: https://github.com/chroline
+  color: blue
+  subtitle: 
+  tags:
+  projectFilesURL:
 
 3d-wheel:
   isLocked: true
@@ -104,22 +129,4 @@ soccer-calculus:
   subtitle: 
   tags:
   projectFilesURL: 
-
-ftc-robotics:
-  isLocked: false
-  isProject: true
-  name: FTC Robotics Java
-  authors:
-    Cole Gawin: https://github.com/chroline
-    u/brandonk8325: https://www.reddit.com/user/brandonk8325
-    jackcrane: https://github.com/jackcrane
-    FROGbots-4634: https://github.com/FROGbots-4634
-  color: red
-  subtitle: Put your Java knowledge towards competing in FTC Robotics challenges with OnBot Java.
-  tags:
-    - robotics
-    - ftc
-    - programming
-    - java
-  projectFilesURL:
   
